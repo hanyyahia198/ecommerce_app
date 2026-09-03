@@ -1,0 +1,9 @@
+import 'package:ecommerce_app/features/auth/data/models/login_request.dart';
+import 'package:ecommerce_app/features/auth/data/models/login_response.dart';
+import 'package:ecommerce_app/features/auth/data/models/register_request.dart';
+import 'package:ecommerce_app/features/auth/data/models/register_response.dart';
+
+abstract class AuthRepository {
+  Future<RegisterResponse>register(RegisterRequest request);
+  Future<LoginResponse>login(LoginRequest request);
+}
